@@ -12,7 +12,7 @@ port = 8888
   [functions."*"]
 
 [build]
-publish = "/opt/build/repo/dist/client"
+publish = "dist/client"
 publishOrigin = "config"
 commandOrigin = "config"
 command = "vite build"
