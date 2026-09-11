@@ -1,0 +1,12 @@
+node_modules
+dist
+.output
+.nitro
+.tanstack
+.vite
+.netlify/v1
+.netlify/state.json
+.DS_Store
+.env
+.env.*
+!.env.example
