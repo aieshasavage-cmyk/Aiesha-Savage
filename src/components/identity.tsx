@@ -18,13 +18,23 @@ export function IdentityProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = React.useState(false)
 
   React.useEffect(() => {
+    let unsubscribe: (() => void) | undefined
+    let cancelled = false
+
     import('@netlify/identity').then(({ getUser, onAuthChange }) => {
       getUser().then((current) => {
+        if (cancelled) return
         setUser(current ?? null)
         setReady(true)
       })
-      onAuthChange((next) => setUser(next ?? null))
+      if (cancelled) return
+      unsubscribe = onAuthChange((_event, next) => setUser(next ?? null))
     })
+
+    return () => {
+      cancelled = true
+      unsubscribe?.()
+    }
   }, [])
 
   const logout = async () => {
