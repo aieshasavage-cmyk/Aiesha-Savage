@@ -8,9 +8,32 @@ export type Shoot = {
 
 export const shoots: Array<Shoot> = [
   {
+    id: 'digitals-2026',
+    title: 'Digitals',
+    cover: '/shoots/digital-01.jpg',
+    images: [
+      '/shoots/digital-01.jpg',
+      '/shoots/digital-02.jpg',
+      '/shoots/digital-03.jpg',
+      '/shoots/digital-04.jpg',
+      '/shoots/digital-05.jpg',
+      '/shoots/digital-06.jpg',
+      '/shoots/digital-07.jpg',
+      '/shoots/digital-08.jpg',
+      '/shoots/digital-09.jpg',
+      '/shoots/digital-10.jpg',
+      '/shoots/digital-11.jpg',
+      '/shoots/digital-12.jpg',
+      '/shoots/digital-13.jpg',
+      '/shoots/digital-14.jpg',
+      '/shoots/digital-15.jpg',
+    ],
+    tags: 'Digitals · February 2026',
+  },
+  {
     id: 'gq-middle-east-2024',
     title: 'GQ Middle East',
-    cover: '/shoots/gq-middle-east-01.jpg',
+    cover: '/shoots/gq-middle-east-04.jpg',
     images: [
       '/shoots/gq-middle-east-01.jpg',
       '/shoots/gq-middle-east-02.jpg',
@@ -37,8 +60,8 @@ export const shoots: Array<Shoot> = [
     tags: 'Editorial · April 2025',
   },
   {
-    id: 'vogue-sept-2024',
-    title: 'Vogue - Sept 2024',
+    id: 'vogue-arabia',
+    title: 'Vogue Arabia',
     cover: '/vogue-3.jpeg',
     images: [
       '/vogue-3.jpeg',

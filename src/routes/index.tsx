@@ -51,7 +51,7 @@ function Home() {
         <SectionTile
           href="/photoshoots"
           label="Portfolio"
-          description="Editorials, campaigns, and creative collaborations"
+          description="Editorials and Campaigns"
           bg="/portfolio.jpg"
         />
         <SectionTile

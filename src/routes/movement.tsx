@@ -20,8 +20,8 @@ function Movement() {
           </h1>
           <div className="mt-4 w-10 h-px bg-[var(--terracotta)] mx-auto" />
           <p className="mt-6 text-[var(--charcoal)]/70 leading-relaxed font-light">
-            Functional strength, somatic awareness, and intentional movement — a
-            program built for bodies that want to feel as good as they look.
+            Sustainable daily movement for functional bodies and lasting
+            lifestyle change ♥
           </p>
           <a
             href="https://docs.google.com/forms/d/10POgoFyQ5NojXVbFnjVquzrRKoerkmc1wiPIQlDaQzU/viewform"
