@@ -12,10 +12,11 @@ port = 8888
   [functions."*"]
 
 [build]
-publish = "/opt/build/repo/dist/client"
-publishOrigin = "config"
-commandOrigin = "config"
-command = "vite build"
+publish = "dist/client"
+# Dependencies are installed here rather than relying on an implicit install
+# step, because the agent deploy path invokes this command directly without
+# one. `npm run build` is used so npm puts node_modules/.bin on PATH for vite.
+command = "npm ci --include=dev && npm run build"
 
   [build.environment]
 
