@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 
-import { NavBar } from '~/components/NavBar'
 import { shoots, type Shoot } from '~/content/shoots'
 
 export const Route = createFileRoute('/photoshoots')({
@@ -13,8 +12,6 @@ function Photoshoots() {
 
   return (
     <div className="min-h-screen bg-[var(--ivory)]">
-      <NavBar />
-
       <div className="pt-24 pb-20 px-6 max-w-6xl mx-auto">
         <header className="mb-14 text-center">
           <h1 className="font-display text-5xl text-[var(--espresso)] font-light tracking-widest">
@@ -48,7 +45,6 @@ function ShootTile({
     <div
       className="group relative overflow-hidden cursor-pointer aspect-[3/4] bg-[var(--charcoal)]"
       onClick={() => onOpen(shoot)}
-      onMouseEnter={() => onOpen(shoot)}
       role="button"
       tabIndex={0}
       aria-label={`Open ${shoot.title}`}

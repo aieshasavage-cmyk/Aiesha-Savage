@@ -38,7 +38,7 @@ function Contact() {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-2xl mx-auto px-4 py-12">
+      <div className="max-w-2xl mx-auto px-4 pt-28 pb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Contact</h1>
         <p className="text-gray-600 mb-8">
           Have a question or want to work together? Drop me a message.

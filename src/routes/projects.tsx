@@ -12,7 +12,7 @@ export const Route = createFileRoute('/projects')({
 function Projects() {
   return (
     <div className="min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto px-4 pt-28 pb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Projects</h1>
         <p className="text-gray-600 mb-8">
           A selection of projects I've built and contributed to.

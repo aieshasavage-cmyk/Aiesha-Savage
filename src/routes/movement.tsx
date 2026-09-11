@@ -2,7 +2,6 @@ import { useState, type FormEvent } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 
 import { Footer } from '~/components/Footer'
-import { NavBar } from '~/components/NavBar'
 import { useIdentity } from '~/components/identity'
 
 export const Route = createFileRoute('/movement')({
@@ -14,8 +13,6 @@ function Movement() {
 
   return (
     <div className="min-h-screen bg-[var(--ivory)]">
-      <NavBar />
-
       <div className="pt-24 pb-20 px-6 max-w-2xl mx-auto">
         <header className="mb-14 text-center">
           <h1 className="font-display text-5xl text-[var(--espresso)] font-light tracking-widest">
@@ -26,6 +23,14 @@ function Movement() {
             Functional strength, somatic awareness, and intentional movement — a
             program built for bodies that want to feel as good as they look.
           </p>
+          <a
+            href="https://docs.google.com/forms/d/10POgoFyQ5NojXVbFnjVquzrRKoerkmc1wiPIQlDaQzU/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-block bg-[var(--espresso)] text-[var(--ivory)] px-10 py-3 text-xs tracking-[0.25em] uppercase hover:bg-[var(--terracotta)] transition-colors"
+          >
+            Train With Me
+          </a>
         </header>
 
         {!ready ? (

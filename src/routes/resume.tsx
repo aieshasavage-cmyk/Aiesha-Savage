@@ -17,7 +17,7 @@ export const Route = createFileRoute('/resume')({
 
 function Resume() {
   return (
-    <div className="min-h-screen p-8 lg:p-12">
+    <div className="min-h-screen px-8 pb-8 pt-28 lg:px-12 lg:pb-12 lg:pt-32">
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <h1 className="text-5xl font-bold">My Resume</h1>

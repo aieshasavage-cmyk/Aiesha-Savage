@@ -1,7 +1,6 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
 
 import { Footer } from '~/components/Footer'
-import { NavBar } from '~/components/NavBar'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -10,8 +9,6 @@ export const Route = createFileRoute('/')({
 function Home() {
   return (
     <div className="bg-[var(--ivory)]">
-      <NavBar />
-
       <section className="relative h-screen w-full overflow-hidden">
         <img
           src="/hero.jpg"
@@ -43,9 +40,9 @@ function Home() {
 
       <section className="max-w-2xl mx-auto py-28 px-8 text-center">
         <p className="font-display text-3xl md:text-4xl text-[var(--espresso)] font-light leading-relaxed italic">
-          Every revolution begins with the body.
+          Revolution begins with the body.
           <br />
-          All change starts with a movement.
+          Change starts with a movement.
         </p>
         <div className="mt-6 w-12 h-px bg-[var(--terracotta)] mx-auto" />
       </section>

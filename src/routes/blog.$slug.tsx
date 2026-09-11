@@ -32,7 +32,7 @@ function BlogPost() {
 
   return (
     <div className="min-h-screen ">
-      <div className="max-w-3xl mx-auto px-4 py-12">
+      <div className="max-w-3xl mx-auto px-4 pt-28 pb-12">
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8"

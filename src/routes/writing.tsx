@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 
 import { Footer } from '~/components/Footer'
-import { NavBar } from '~/components/NavBar'
 import { essays } from '~/content/essays'
 
 export const Route = createFileRoute('/writing')({
@@ -11,8 +10,6 @@ export const Route = createFileRoute('/writing')({
 function Writing() {
   return (
     <div className="min-h-screen bg-[var(--ivory)]">
-      <NavBar />
-
       <div className="pt-24 pb-20 px-6 max-w-3xl mx-auto">
         <header className="mb-14 text-center">
           <h1 className="font-display text-5xl text-[var(--espresso)] font-light tracking-widest">

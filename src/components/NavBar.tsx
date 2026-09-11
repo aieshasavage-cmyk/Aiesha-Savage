@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link } from '@tanstack/react-router'
+import { useEffect, useState } from 'react'
+import { Link, useLocation } from '@tanstack/react-router'
 
 const LINKS = [
   { to: '/photoshoots', label: 'Portfolio' },
@@ -9,9 +9,29 @@ const LINKS = [
 
 export function NavBar() {
   const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const location = useLocation()
+
+  // The home hero is dark, so the bar can sit transparent over it while the
+  // page is still at the top. Everywhere else the background is light, and the
+  // white lettering needs the bar filled in to stay readable.
+  const overlay = location?.pathname === '/' && !scrolled
+
+  useEffect(() => {
+    const syncScrolled = () => setScrolled(window.scrollY > 40)
+
+    syncScrolled()
+    window.addEventListener('scroll', syncScrolled, { passive: true })
+
+    return () => window.removeEventListener('scroll', syncScrolled)
+  }, [location?.pathname])
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 transition-colors duration-300 ${
+        overlay ? '' : 'bg-[var(--espresso)]/95 backdrop-blur-sm'
+      }`}
+    >
       <Link
         to="/"
         className="font-display text-white text-xl tracking-widest uppercase"
