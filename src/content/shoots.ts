@@ -75,4 +75,16 @@ export const shoots: Array<Shoot> = [
     ],
     tags: 'Digitals · February 2026',
   },
+  {
+    id: 'lfw-aw26',
+    title: "LFW AW '26",
+    cover: '/shoots/lfw-aw26-leo-prothmann.png',
+    images: [
+      '/shoots/lfw-aw26-leo-prothmann.png',
+      '/shoots/lfw-aw26-hector-maclean.jpg',
+      '/shoots/lfw-aw26-ksenia-schnaider.png',
+      '/shoots/lfw-aw26-04.jpg',
+    ],
+    tags: 'Runway · February 2026',
+  },
 ]
